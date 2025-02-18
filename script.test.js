@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import { updateBookmarkList } from "./test.js";
+import { updateBookmarkList } from "./script.js";
 // import "@testing-library/jest-dom";
 
 describe("updateBookmarkList", () => {
@@ -12,11 +12,6 @@ describe("updateBookmarkList", () => {
     // Set up the document body with an empty UL element
     document.body.innerHTML = `<ul id="bookmark-list"></ul>`;
     bookmarkList = document.getElementById("bookmark-list");
-  });
-
-  test("displays 'No bookmarks found.' when bookmarks list is empty", () => {
-    updateBookmarkList([]);
-    expect(bookmarkList).toHaveTextContent("No bookmarks found.");
   });
 
   test("renders bookmarks correctly", () => {

@@ -2,8 +2,9 @@
   "name": "book-mark",
   "version": "1.0.0",
   "main": "script.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose"
   },
   "repository": {
     "type": "git",
